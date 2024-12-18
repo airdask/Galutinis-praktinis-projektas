@@ -1,0 +1,96 @@
+.top-header {
+    padding: 10px 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+
+    background-color: rgba(32, 21, 46, 0.6);
+    border-radius: 15px;
+    backdrop-filter: blur(2px);
+
+    max-width: 920px;
+    margin-left: auto;
+    margin-right: auto;
+
+    ul {
+        opacity: 1;
+        list-style: none;
+        flex-direction: row;
+        display: flex;
+        color: #ffff;
+    }
+
+    li {
+        float: right;
+        a {
+            line-height: 24px;
+            text-decoration: none;
+            color: var(--text-color);
+            border-bottom: 2px solid transparent;
+            transition: all 0.3s;
+            margin: 16px;
+            padding-bottom: 3px;
+
+            &:hover {
+                color: var(--accent-color);
+                border-bottom-color: var(--accent-color);
+            }
+        }
+    }
+
+    &__get-started-btn {
+        padding: 10px 14px;
+        outline: 2px solid var(--accent-color);
+        color: var(--accent-color);
+        border-radius: 36px;
+        transition: all 0.2s;
+    }
+
+    &__get-started-btn:hover {
+        background-color: var(--accent-color);
+        color: #ffff;
+    }
+
+    .menu-toggle {
+        display: none;
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+        color: var(--text-color);
+    }
+
+    @media (max-width: 768px) {
+        margin-left: 15px;
+        margin-right: 15px;
+        ul {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 60px; 
+            right: 0;
+            background-color: rgba(32, 21, 46, 0.9);
+            width: 100%;
+            padding: 16px;
+            border-radius: 0 0 15px 15px; 
+        }
+
+        ul.show {
+            display: flex; 
+        }
+
+        .menu-toggle {
+            display: block;
+        }
+
+        &__get-started-btn {
+            display: none;
+        }
+    }}
+
+
+
+    

@@ -1,0 +1,77 @@
+.mission-section {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-top: 18px;
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+        align-items: stretch;
+    }
+}
+
+.mission-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--card-bg-color);
+    padding: 20px;
+    border: 2px solid var(--accent-color);
+    border-radius: 15px;
+    text-align: center;
+    gap: 10px;
+
+
+    &__card-text {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        gap: 10px;
+    }
+}
+
+@media (min-width: 768px) {
+    .mission-section {
+
+
+        &__cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+        }
+    }
+
+    .mission-card {
+        flex-direction: column;
+
+        &__card-text {
+            text-align: center;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .mission-section{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        flex-direction: row;
+        align-items: center;
+
+        &__text {
+            gap: 54px;
+            text-align: left;
+        }
+    }
+
+    
+}

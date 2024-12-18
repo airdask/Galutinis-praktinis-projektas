@@ -1,0 +1,12 @@
+.contact-us-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    &__text {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+}}
+

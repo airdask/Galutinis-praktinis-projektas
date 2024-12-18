@@ -1,0 +1,85 @@
+.contact-us-section form {
+    width:500px;
+    min-width:38%;
+    max-width:100%;
+    text-align: center;
+}
+
+form .input-box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-box .input-field {
+    width: 48%;
+}
+
+.field .item {
+    width: 100%;
+    padding: 18px;
+    background: var(--card-bg-color);
+    border: 2px solid var(--text-color);
+    outline: none;
+    border-radius: 15px;
+    font-size: 14px;
+    color: white;
+    margin: 12px 0;
+
+    &:focus {
+        border-color: var(--accent-color);
+    }
+}
+
+.field.error .item {
+    border-color: #d93025;
+}
+
+.field .item::placeholder {
+    color: var(--text-color);
+}
+
+.field .error-txt {
+    font-size: 11px;
+    color: #d93025;
+    text-align: left;
+    margin: -8px 10px 10px;
+    display: none;
+}
+
+.field.error .error-txt {
+    display: block;
+}
+
+form .textarea-field .item {
+    resize: none;
+}
+
+form button {
+    padding: 10px 14px;
+    outline: 2px solid var(--accent-color);
+    color: var(--accent-color);
+    border-radius: 36px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+
+    &:hover {
+        background-color: var(--accent-color);
+        color: white;
+    }
+}
+
+
+
+@media (max-width: 660px) {
+    form .input-box{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .input-box .input-field {
+        width: 100%;
+    }
+}

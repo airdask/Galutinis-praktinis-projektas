@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  .content-wrapper {
+    max-width: 920px;
+    margin: 0 auto;
+    @media (max-width:950px) {
+      margin: 0px 15px;
+      
+    }
+  }
+ 
+  body {
+    font-family: Ubuntu, sans;
+    background-color: var(--background-color);
+}
+
+a {
+    text-decoration: none;
+    list-style: none;
+  }
+
+  p {
+    color: var(--text-color);
+    font-size: 11px;
+  }
+
+  h1 {
+    color: var(--heading-color);
+    font-weight: bold;
+    font-size: 28px;
+  }
+
+  h2 {
+    color: var(--heading-color);
+    font-weight: bold;
+    font-size: 17px;
+  }
+
+  h3 {
+    color: var(--heading-color);
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  h4 {
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 12px;
+  }
+
+  .skiriamoji-juosta {
+    border-bottom: solid 2px var(--accent-color);
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  form, input, textarea, button, select {
+    font-family: Ubuntu, sans-serif;
+    font-weight: 100;
+}

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planetarium</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <script defer src="scripts/flipcard.js"></script>
+    <script defer src="scripts/contact-form.js"></script>
+</head>
+<body>
+<section class="top-section">
+    <div class="content-wrapper">
+        <header class="top-header">
+            <a href="#">
+                <img src="img/planetarium.svg" alt="Planetarium project logo">
+            </a>
+           
+            <ul class="top-header__navigation">
+                <li><a href="#musu-misija">MŪSŲ MISIJA</a></li>
+                <li><a href="#top-3-planetos">TOP 3</a></li>
+                <li><a href="#atsiliepimai">ATSILEPIMAI</a></li>
+            </ul>
+            
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                ☰
+            </button>
+
+            <a id="gt-started-btn" class="top-header__get-started-btn" href="#susisiek-su-mumis">Pradėti</a>
+        </header>
+
+        <div class="info-card">
+            <h1>
+                Visata ant tavo pirštų galiukų!
+            </h1>
+            <p>
+                Išsirink savo tobulą gyvenamąją planetą mūsų galaktiniame kataloge. Kiekviena planeta – unikali galimybė naujai pradžiai.
+            </p>
+            <a id="atrask-savo-planeta-btn" class="info-card__CTA" href="#susisiek-su-mumis">Atrask savo planetą</a>
+        </div>
+    </div>
+</section>
+
+<div class="skiriamoji-juosta content-wrapper" style="margin-top: 0;" id="musu-misija"></div>
+
+<section class="mission-section content-wrapper">
+    <div class="mission-section__text">
+        <h2>
+            Apie mūsų misiją
+        </h2>
+        <p>
+            Kosmosas yra milžiniškas, tačiau mes pasirūpinsime, kad atrastum savo vietą tarp žvaigždžių. Mūsų ekspertai kruopščiai atrinko planetas pagal klimatą, gyvenimo sąlygas ir kitas charakteristikas, tad nerimauti dėl savo naujų namų nėra ko. Nesvarbu, ar ieškai ramybės, nuotykių ar naujo gyvenimo pradžios – mes turime variantus visiems.
+        </p>
+    </div>
+        <div class="mission-section__cards">
+            <div class="mission-card">
+              <picture>
+                <img src="img/pasirinkimas.svg" alt="Platus pasirinkimas">
+              </picture>
+              <div class="mission-card__card-text">
+                <h2>Platus pasirinkimas</h2>
+                <p>Daugiau nei 100 galimų planetų</p>
+               </div>
+            </div>
+          
+            <div class="mission-card">
+              <picture>
+                <img src="img/izvalgos.svg" alt="Ekspertų įžvalgos">
+              </picture>
+              <div class="mission-card__card-text">
+                <h2>Ekspertų įžvalgos</h2>
+              <p>Gyvenimui kitoje planetoje pasiruošk tinkamai</p>
+              </div>
+            
+            </div>
+          
+            <div class="mission-card">
+              <picture>
+                <img src="img/gyvybingumas.svg" alt="Gyvybingumas">
+              </picture>
+              <div class="mission-card__card-text">
+                <h2>Gyvybingumas</h2>
+              <p>Kiekviena iš mūsų siūlomų planetų turi bent vieną gyventoją</p>
+              </div>
+            </div>
+          </div>
+</section>
+
+<div class="skiriamoji-juosta content-wrapper" id="top-3-planetos"></div>
+
+<section class="flipcard-section content-wrapper">
+  <div class="flipcard-section__text">
+      <h2>
+        Top 3 planetos šiuo metu
+      </h2>
+      <p>
+        Šios planetos šiuo metu yra tikros žvaigždės! Jas renkasi daugybė naujakurių dėl puikių gyvenimo sąlygų, unikalių kraštovaizdžių ir begalinių galimybių.
+      </p>
+  </div>
+
+  <div class="flipcard-section">
+    <div class="flipcard">
+        <div class="flipcard__inner">
+            <div class="flipcard__face flipcard__face--front" style="background-image: url('../img/top3-1.jpg');"></div>
+            <div class="flipcard__face flipcard__face--back">
+                <div class="flipcard__content">
+                    <div class="flipcard__header">
+                        <h3>Kepler-452b</h3>
+                    </div>
+                    <div class="flipcard__body">
+                        <p>Žemės analogas su gausiais ištekliais ir švelniu klimatu.</p>
+                        <a class="flipcard__CTA" href="#">Daugiau informacijos</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="flipcard">
+        <div class="flipcard__inner">
+            <div class="flipcard__face flipcard__face--front" style="background-image: url('../img/top3-2.jpg');"></div>
+            <div class="flipcard__face flipcard__face--back">
+                <div class="flipcard__content">
+                    <div class="flipcard__header">
+                        <h3>Proxima Centauri b</h3>
+                    </div>
+                    <div class="flipcard__body">
+                        <p>Planeta prie artimiausios žvaigždės už Saulės.</p>
+                        <a class="flipcard__CTA" href="#">Daugiau informacijos</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="flipcard">
+        <div class="flipcard__inner">
+            <div class="flipcard__face flipcard__face--front" style="background-image: url('../img/top3-3.jpg');"></div>
+            <div class="flipcard__face flipcard__face--back">
+                <div class="flipcard__content">
+                    <div class="flipcard__header">
+                        <h3>Gliese 581g</h3>
+                    </div>
+                    <div class="flipcard__body">
+                        <p>Potenciali gyvenama planeta Gliese sistemoje.</p>
+                        <a class="flipcard__CTA" href="#">Daugiau informacijos</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<div class="skiriamoji-juosta content-wrapper" id="atsiliepimai"></div>
+
+<section class="testimonial-section content-wrapper">
+    <div class="testimonial-section__text">
+        <h2>
+            Ką sako mūsų klientai? 
+        </h2>
+    </div>
+
+    <div class="testimonials">
+        <div class="testimonial grid-col-span-3">
+            <div class="testimonial__author">
+                <picture>
+                    <img src="img/jonas.jpg" alt="Jonas Petrauskas">
+                </picture>
+                <div class="testimonial__name">
+                    <h3>Jonas Petrauskas</h3>
+                    <h4>Kosmoso tyrinėtojas</h4>
+                </div>
+            </div>
+            <p>„Gyvenimas Kepler-452b yra lyg sapnas. Nuostabiai švelnus klimatas ir gausūs resursai sukūrė ne tik puikias gyvenimo sąlygas, bet ir begalę galimybių naujiems atradimams. Kelionė į Kepler-452b pakeitė mano požiūrį į gyvenimą kosmose. Ši planeta suteikia tiek daug galimybių kurti, atrasti ir tiesiog mėgautis nauja pradžia.“</p>    
+        </div>
+    
+        <div class="testimonial grid-col-span-2" >
+            <div class="testimonial__author">
+                <picture>
+                    <img src="img/laura.jpg" alt="Laura Baltrušaitė">
+                </picture>
+                <div class="testimonial__name">
+                    <h3>Laura Baltrušaitė</h3>
+                    <h4>Inžinerijos specialistė</h4>
+                </div>
+            </div>
+            <p>„Proxima Centauri b tapo mano nuotykių pradžia. Nors paviršius gana griežtas, unikalios savybės ir artumas prie raudonosios žvaigždės sužadino tyrinėjimo dvasią. Rekomenduoju visiems, ieškantiems iššūkių!“</p>    
+        </div>
+    
+        <div class="testimonial grid-col-span-2">
+            <div class="testimonial__author">
+                <picture>
+                    <img src="img/agne.jpg" alt="Agnė Jurevičiūtė">
+                </picture>
+                <div class="testimonial__name">
+                    <h3>Agnė Jurevičiūtė</h3>
+                    <h4>Ekologijos mokslininkė</h4>
+                </div>
+            </div>
+            <p>„Kepler-452b buvo mano svajonių planeta. Turėdama puikią ekologinę pusiausvyrą ir natūralius išteklius, ji atvėrė neįtikėtinus kelius tiek mokslui, tiek asmeniniam gyvenimui.“</p>    
+        </div>
+    
+        <div class="testimonial grid-col-span-3">
+            <div class="testimonial__author">
+                <picture>
+                    <img src="img/tomas.jpg" alt="Tomas Venskus">
+                </picture>
+                <div class="testimonial__name">
+                    <h3>Tomas Venskus</h3>
+                    <h4>Astrofizikas</h4>
+                </div>
+            </div>
+            <p>„Proxima Centauri b yra tarsi kosmoso paslaptis, laukusi, kol ją atrasime. Manau, tai viena įdomiausių planetų dėl savo artumo ir neįtikėtinos energijos atmosferos, kurią jaučia kiekvienas lankytojas.“</p>    
+        </div>
+    </div>
+</section>
+    
+<div class="skiriamoji-juosta content-wrapper" id="susisiek-su-mumis"></div>
+
+<section class="contact-us-section content-wrapper">
+    <div class="contact-us-section__text">
+        <h2>
+            Tavo naujas gyvenimas laukia!
+        </h2>
+        <p>
+            Susisiek su mumis ir pradėk savo kelionę į naują pasaulį šiandien.
+        </p>
+    </div>
+
+    <form action="#">
+        <div class="input-box">
+            <div class="input-field field">
+                <input type="text" placeholder="Vardas ir pavardė" id="name" class="item" autocomplete="off">
+                <div class="error-txt">Šis laukas privalomas</div>
+            </div>
+            <div class="input-field field">
+                <input type="text" placeholder="El. paštas" id="email" class="item" autocomplete="off">
+                <div class="error-txt email">Šis laukas privalomas</div>
+            </div>
+        </div>
+
+        <div class="input-box">
+            <div class="input-field field">
+                <input type="text" placeholder="Telefono numeris" id="phone" class="item" autocomplete="off">
+                <div class="error-txt">Šis laukas privalomas</div>
+            </div>
+            <div class="input-field field">
+                <select name="topic" id="topic" required class="item" placeholder="Tema">
+                    <option value="general">Bendra užklausa</option>
+                    <option value="planets">Informacija apie planetas</option>
+                    <option value="travel">Kelionių planavimas</option>
+                    <option value="other">Kita</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="textarea-field field">
+            <textarea name="" id="Message" cols="30" rows="10" placeholder="Jūsų žinutė" class="item"></textarea>
+            <div class="error-txt">Šis laukas privalomas</div>
+        </div>
+
+        <button type="submit">Siųsti užklausą</button>
+    </form>
+
+</section>
+
+<div class="skiriamoji-juosta content-wrapper"></div>
+</body>
+</html>
