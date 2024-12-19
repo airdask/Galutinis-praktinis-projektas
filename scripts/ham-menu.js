@@ -13,3 +13,15 @@ menuItems.forEach(item => {
         offScreenMenu.classList.remove('active');
     });
 });
+
+
+const navbar = document.getElementById('navbar');
+console.log(navbar);
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 50) {
+    navbar.classList.add('solid');
+  } else {
+    navbar.classList.remove('solid');
+  }
+});
