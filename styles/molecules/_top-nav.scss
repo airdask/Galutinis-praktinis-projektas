@@ -128,6 +128,11 @@
     }}
 
     .off-screen-menu {
+        display: none;
+    }
+
+    @media (max-width: 768px) {
+    .off-screen-menu {
         background-color: var(--card-bg-color);
         height: 100vh;
         width: 100%;
@@ -160,7 +165,7 @@
         right: 0;
     }
 
-
+}
 
 
 
