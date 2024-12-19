@@ -14,26 +14,42 @@
 
     <script defer src="scripts/flipcard.js"></script>
     <script defer src="scripts/contact-form.js"></script>
+    <script defer src="scripts/ham-menu.js"></script>
 </head>
 <body>
 <section class="top-section">
     <div class="content-wrapper">
-        <header class="top-header">
-            <a href="#">
-                <img src="img/planetarium.svg" alt="Planetarium project logo">
-            </a>
-           
-            <ul class="top-header__navigation">
-                <li><a href="#musu-misija">MŪSŲ MISIJA</a></li>
-                <li><a href="#top-3-planetos">TOP 3</a></li>
-                <li><a href="#atsiliepimai">ATSILEPIMAI</a></li>
-            </ul>
+        <header>
+            <nav class="top-header">
+                <a href="#">
+                    <img src="img/planetarium.svg" alt="Planetarium project logo">
+                </a>
+               
+                <ul class="top-header__navigation">
+                    <li><a href="#musu-misija">MŪSŲ MISIJA</a></li>
+                    <li><a href="#top-3-planetos">TOP 3</a></li>
+                    <li><a href="#atsiliepimai">ATSILEPIMAI</a></li>
+                </ul>
+                
+                <div class="ham-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+    
+                <a id="gt-started-btn" class="top-header__get-started-btn" href="#susisiek-su-mumis">Pradėti</a>
+            </nav>
             
-            <button class="menu-toggle" aria-label="Toggle navigation">
-                ☰
-            </button>
+            <div class="off-screen-menu">
+                <ul>
+                    <li><a href="#musu-misija">MŪSŲ MISIJA</a></li>
+                    <li><a href="#top-3-planetos">TOP 3</a></li>
+                    <li><a href="#atsiliepimai">ATSILEPIMAI</a></li>
+                    <li><a href="#susisiek-su-mumis">PRADĖTI</a></li>
+                </ul>
+            </div>
 
-            <a id="gt-started-btn" class="top-header__get-started-btn" href="#susisiek-su-mumis">Pradėti</a>
+
         </header>
 
         <div class="info-card">
@@ -272,6 +288,11 @@
 
 </section>
 
-<div class="skiriamoji-juosta content-wrapper"></div>
+<footer class="footer-section">
+    <div>
+        <p>&copy; Planetarium. Visos teisės saugomos.</p>
+    </div>
+</footer>
+
 </body>
 </html>

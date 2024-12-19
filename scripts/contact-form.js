@@ -64,10 +64,11 @@ form.addEventListener("submit", (e) => {
 
     if (!fullName.classList.contains("error") && !email.classList.contains("error") 
     && !phone.classList.contains("error") && !message.classList.contains("error"))  {
-        console.log("ok");
+        window.alert("Laiškas išsiųstas");
 
         form.reset();
         return false;
     }
 
 })
+
