@@ -1,8 +1,9 @@
 .top-section {
         background-image: url('../img/bg-img.jpg');
-        min-height: 500px;
-        background-size: cover;
+        min-height: 100vh;
+        padding-top: 15px;
+        background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
-        padding-top: 15px;
+        background-size: cover;
         }

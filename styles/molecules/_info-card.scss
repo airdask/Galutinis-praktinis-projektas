@@ -5,7 +5,7 @@
     align-items: center;
     gap: 20px;
     max-width: 361px;
-    margin: 40px auto;
+    margin: 20vh auto;
     padding: 32px 39px;
     text-align: center;
     background-color: rgba(32, 21, 46, 0.6);
@@ -41,8 +41,6 @@
 
 @media (min-width: 1024px) {
     .info-card {
-        margin-right: auto;
-        margin-left: 0;
-        justify-content: flex-start;
+        justify-content: center;
     }
 }
